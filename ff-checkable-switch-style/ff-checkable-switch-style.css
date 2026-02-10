@@ -1,0 +1,82 @@
+/**
+ * Project: Fluent Forms — Add Checkable Switch Style
+ * Description: Adds a new Style 'Switch (Custom)' to Radio and Checkboxes. Use it with ff-checkable-switch-style.php
+ *
+ * @author   st3phan76
+ * @profile  https://github.com/st3phan76
+ * @version  1.0.0
+ *
+ * License: GPL-2.0-or-later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+:root {
+    --fluentform-switch-bgcolor: #ccc;
+    --fluentform-switch-bgcolor-active: #2196F3;
+    --fluentform-switch-left: 50px;
+    --fluentform-switch-width: 40px;
+    --fluentform-switch-height: 20px;
+}
+
+/* ccontainer */
+.ff_list_switch .ff-el-form-check-label {
+    display: inline-block;
+    position: relative;
+    padding-left: var(--fluentform-switch-left);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* hide original checkbox */
+.ff_list_switch .ff-el-form-check-input {
+    position: absolute;
+    display: none !important;
+    width: 0;
+    height: 0;
+}
+
+/* label text */
+.ff_list_switch .ff-el-form-check-label span {
+    position: relative;
+}
+
+/* track */
+.ff_list_switch .ff-el-form-check-label span::before {
+    content: "" !important;
+    position: absolute;
+    left: calc(var(--fluentform-switch-left) * -1);
+    top: 0;
+    width: var(--fluentform-switch-width);
+    height: var(--fluentform-switch-height);
+    background-color: var(--fluentform-switch-bgcolor) !important;
+    border-radius: calc(var(--fluentform-switch-height) / 2);
+    transition: background-color 0.3s;
+}
+
+/* button */
+.ff_list_switch .ff-el-form-check-label span::after {
+    content: "" !important;
+    position: absolute;
+    left: calc(var(--fluentform-switch-left) * -1);
+    top: 0;
+    width: var(--fluentform-switch-height);
+    height: var(--fluentform-switch-height);
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+/* track checked */
+.ff_list_switch .ff-el-form-check-input:checked + span::before {
+    background-color: var(--fluentform-switch-bgcolor-active) !important;
+}
+
+/* move button */
+.ff_list_switch .ff-el-form-check-input:checked + span::after {
+    transform: translateX(
+        calc(
+            var(--fluentform-switch-width) - var(--fluentform-switch-height)
+        )
+    );
+}
