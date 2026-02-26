@@ -1,3 +1,4 @@
+<?php
 /**
  * Project: Fluent Forms — Add Checkable Switch Style
  * Description: Adds a new Style 'Switch (Custom)' to Radio and Checkboxes. Use it with ff-checkable-switch-style.css

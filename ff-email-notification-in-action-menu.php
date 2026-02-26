@@ -1,3 +1,4 @@
+<?php
 /**
  * Project: Fluent Forms — Add Email Notifications to action menu
  * Description: Adds translated Email Notification Link in action menu
