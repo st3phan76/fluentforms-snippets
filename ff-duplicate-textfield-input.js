@@ -1,13 +1,16 @@
 /**
- * Project: Fluent Forms — Duplicate Textfield Input
- * Description: Copies or duplicates the input from one text field to another live.
+ * Fluent Forms — Duplicate Textfield Input
  *
- * @author   st3phan76
- * @profile  https://github.com/st3phan76
- * @version  1.0.0
+ * Live-copies the input from one text field to another in Fluent Forms.
+ * This allows users to automatically replicate data between fields as they type,
+ * improving form usability and reducing redundant input.
  *
- * License: GPL-2.0-or-later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * @package    FluentFormsSnippets
+ * @author     st3phan76
+ * @copyright  2026 st3phan76
+ * @license    GPL-2.0-or-later
+ * @link       https://github.com/st3phan76
+ * @version    1.0.0
  */
 
 (function () {

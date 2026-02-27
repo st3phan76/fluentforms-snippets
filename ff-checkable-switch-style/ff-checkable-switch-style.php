@@ -1,14 +1,17 @@
 <?php
 /**
- * Project: Fluent Forms — Add Checkable Switch Style
- * Description: Adds a new Style 'Switch (Custom)' to Radio and Checkboxes. Use it with ff-checkable-switch-style.css
+ * Fluent Forms — Add Checkable Switch Style
  *
- * @author   st3phan76
- * @profile  https://github.com/st3phan76
- * @version  1.0.0
+ * Adds a new visual style called 'Switch (Custom)' for radio buttons and checkboxes in Fluent Forms.
+ * This allows users to toggle options with a modern switch interface.
+ * Include the accompanying CSS file `ff-checkable-switch-style.css` in your theme or plugin to enable the style.
  *
- * License: GPL-2.0-or-later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * @package    FluentFormsSnippets
+ * @author     st3phan76
+ * @copyright  2026 st3phan76
+ * @license    GPL-2.0-or-later
+ * @link       https://github.com/st3phan76
+ * @version    1.0.0
  */
 
 add_filter('fluentform/editor_element_customization_settings', function ($settings) {

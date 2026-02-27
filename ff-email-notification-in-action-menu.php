@@ -1,14 +1,17 @@
 <?php
 /**
- * Project: Fluent Forms — Add Email Notifications to action menu
- * Description: Adds translated Email Notification Link in action menu
+ * Fluent Forms — Add Email Notifications to Action Menu
  *
- * @author   st3phan76
- * @profile  https://github.com/st3phan76
- * @version  1.0.0
+ * Adds a translated 'Email Notification' link to the action menu in Fluent Forms.
+ * This enables users to quickly access email notification settings directly from the form's action interface,
+ * improving workflow and usability.
  *
- * License: GPL-2.0-or-later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * @package    FluentFormsSnippets
+ * @author     st3phan76
+ * @copyright  2026 st3phan76
+ * @license    GPL-2.0-or-later
+ * @link       https://github.com/st3phan76
+ * @version    1.0.0
  */
 
 add_action('admin_footer', function() {
