@@ -1,0 +1,39 @@
+/**
+ * Fluent Forms — CSS for static Accordion (like fieldset)
+ *
+ * Add 'is-static' to the accordion container-class in the form editor. It removes the ability to open/close the accordion.
+ * Include the CSS-Code in your form or a snippet.
+ *
+ * @package    FluentFormsSnippets
+ * @author     st3phan76
+ * @copyright  2026 st3phan76
+ * @license    GPL-2.0-or-later
+ * @link       https://github.com/st3phan76
+ * @version    1.0.0
+ */
+
+ .ff-accordion-container.is-static .ff-accordion-header {
+  pointer-events: none;
+  cursor: default;
+}
+
+.ff-accordion-container.is-static .ff-accordion-toggle {
+  display: none !important; /* hide icon */
+}
+
+.ff-accordion-container.is-static {
+    border: 1px solid var(--e-global-color-primary);
+}
+
+.ff-accordion-container.is-static .ff-accordion-content {
+    background-color: #E3F2FD;
+}
+
+.ff-accordion-container.is-static .ff-accordion-header-open {
+  background-color: var(--e-global-color-primary) !important;
+}
+
+.ff-accordion-container.is-static .ff-accordion-header .ff-accordion-title,
+.ff-accordion-container.is-static .ff-accordion-header .ff-accordion-description {
+    color: #fff;
+}
